@@ -108,10 +108,10 @@ int main() {
             if (key == 0 || key == 224) {
                 int arrow = _getch();
                 switch (arrow) {
-                    case 72: movePlayer( 0, -1); break; // 上
-                    case 80: movePlayer( 0,  1); break; // 下
-                    case 75: movePlayer(-1,  0); break; // 左
-                    case 77: movePlayer( 1,  0); break; // 右
+                    case 72: movePlayer( 0, -1); break;
+                    case 80: movePlayer( 0,  1); break; 
+                    case 75: movePlayer(-1,  0); break;
+                    case 77: movePlayer( 1,  0); break;
                 }
                 drawMaze();
 
