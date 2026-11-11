@@ -47,7 +47,7 @@ int main() {
     zoo.addAnimal(new Dog());
     zoo.addAnimal(new Cat());
 
-    cout << "动物园动物开始吼叫：" << endl;
+   cout<<zoo.animals[0]->shout()<<endl;
     zoo.allShout();
 
     return 0;
