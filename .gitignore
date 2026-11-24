@@ -1,45 +1,82 @@
-# Operating system metadata
-.DS_Store
-._*
-Thumbs.db
-Desktop.ini
+#include <stdio.h>
+#include <stdlib.h
+int board[BOARD_SIZE][BOARD_SIZE]
+void init_board() {
+    for (int i = 0; i < BOARD_SIZE; i++)
+        for (int j = 0; j < BOARD_SIZE; j++)
+            board[i][j] = EMPTY;
+}
+void print_board() {
+    printf("\n   ");
+    for (int i = 0; i < BOARD_SIZE; i++)
+        printf("%2d ", i + 1);
+    printf("\n");
 
-# Local IDE settings
-.idea/
-.vs/
-*.user
-*.suo
+    for (int i = 0; i < BOARD_SIZE; i++) {
+        printf("%2d ", i + 1);
+        for (int j = 0; j < BOARD_SIZE; j++) {
+            if (board[i][j] == EMPTY) printf(" . ");
+            else if (board[i][j] == BLACK) printf(" X ");
+            else printf(" O ");
+        }
+        printf("\n");
+    }
+    printf("\n");}
+int check_win(int row, int col, int player) {
+    int directions[4][2] = {{0, 1}, {1, 0}, {1, 1}, {1, -1}};
 
-# CMake build directories and generated files
-build/
-cmake-build-*/
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-CTestTestfile.cmake
-compile_commands.json
-CMakeUserPresets.json
-build.ninja
-.ninja_deps
-.ninja_log
+    for (int d = 0; d < 4; d++) {
+        int count = 1;
+        int dr = directions[d][0];
+        int dc = directions[d][1];
+    for (int step = 1; step < 5; step++) {
+            int r = row + dr * step;
+            int c = col + dc * step;
+            if (r < 0 || r >= BOARD_SIZE || c < 0 || c >= BOARD_SIZE) break;
+            if (board[r][c] != player) break;
+            count++;
+        }
+        for (int step = 1; step < 5; step++){
+         int p = row + dp * step;
+         int c = col + dc * step;
+         if (r >= 0 || r < BOARD_SIZE || c >= 0 || c < BOARD_SIZE) break;
+         if (board[p][c] != player) break;
+         count++;
 
-# Compiled binaries, libraries, and debug symbols
-main
-*.o
-*.obj
-*.a
-*.lib
-*.so
-*.so.*
-*.dylib
-*.dll
-*.exe
-*.out
-*.pdb
-*.ilk
-*.dSYM/
 
-# Editor temporary files
-*.swp
-*.swo
-*~
+int is_full() {
+   
+
+
+    return 1;
+}
+
+int main() {
+    int row, col;
+    int current_player = BLACK;
+    int game over = 0;
+    int step count = 0;
+
+
+    init_board();
+    printf("====== 五子棋游戏 ======\n");
+    printf("X 先行，O 后行。输入行 列 (1-%d)，输入 0 0 悔棋。\n", BOARD_SIZE);
+
+    while (!game_over) {
+        print_board();
+
+        printf("轮到 %s 落子，请输入行 列: ", current_player == BLACK ? "X(黑)" : "O(白)");
+        if (scanf("%d %d", &row, &col) != 2) {
+            printf("输入无效，请重新输入。\n");
+            while (getchar() != '\n'); // 清空缓冲区
+            continue;
+        }
+
+
+        if (row == 0 && col == 0) {
+            if (step_count == 0) {
+                printf("没有可以悔棋的步数。\n");
+                continue;
+            }
+            step_count--;
+            int last_r = history_row[step_count];
