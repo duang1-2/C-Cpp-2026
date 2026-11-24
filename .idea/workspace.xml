@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="ccpp2026" targetName="p01_running_letter" />
+      <config projectName="ccpp2026" targetName="p04_hanoi" />
+      <config projectName="ccpp2026" targetName="p08_warehouse" />
+      <config projectName="ccpp2026" targetName="p06_push_boxes" />
+      <config projectName="ccpp2026" targetName="p03_all_primes" />
+      <config projectName="ccpp2026" targetName="p07_linked_list" />
+      <config projectName="ccpp2026" targetName="p09_safe_array_cpp" />
+      <config projectName="ccpp2026" targetName="p10_zoo_cpp" />
+      <config projectName="ccpp2026" targetName="p02_is_prime" />
+      <config projectName="ccpp2026" targetName="p05_maze" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41ca2f2f-578a-42b3-9f76-f63ad6744b95" name="更改" comment="feat：完成主体代码" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="D:\Git\bin\git.exe" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;duang1-2&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/duang1-2/C-Cpp-2026.git&quot;,
+    &quot;accountId&quot;: &quot;7a561cde-b083-49ec-a3c8-f6598dde9eee&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/neudz/CLionProjects/C-Cpp-2026/level1/p05_maze/main.c" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/neudz/CLionProjects/C-Cpp-2026/level1/p08_warehouse/main.c" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/neudz/CLionProjects/C-Cpp-2026/level1/p10_zoo_cpp/main.cpp" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="O7z1lFxV" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2026" />
+    <option name="minorVersion" value="2.2" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JgRHDu8twHgTyrNBZ91E2CUIau" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake 应用程序.p02_is_prime.executor": "Run",
+    "CMake 应用程序.p03_all_primes.executor": "Run",
+    "CMake 应用程序.p05_maze.executor": "Run",
+    "CMake 应用程序.p07_linked_list.executor": "Run",
+    "CMake 应用程序.p08_warehouse.executor": "Run",
+    "CMake 应用程序.p10_zoo_cpp.executor": "Run",
+    "CidrDebugProfileConversion": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager" selected="CMake 应用程序.p03_all_primes">
+    <configuration name="p01_running_letter" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p01_running_letter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p01_running_letter">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p02_is_prime" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p02_is_prime" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p02_is_prime">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p03_all_primes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p03_all_primes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p03_all_primes">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p04_hanoi" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p04_hanoi" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p04_hanoi">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p05_maze" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p05_maze" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p05_maze">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p06_push_boxes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p06_push_boxes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p06_push_boxes">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p07_linked_list" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p07_linked_list" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p07_linked_list">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p08_warehouse" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p08_warehouse" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p08_warehouse">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p09_safe_array_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p09_safe_array_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p09_safe_array_cpp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p10_zoo_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ccpp2026" TARGET_NAME="p10_zoo_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ccpp2026" RUN_TARGET_NAME="p10_zoo_cpp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake 应用程序.p01_running_letter" />
+      <item itemvalue="CMake 应用程序.p02_is_prime" />
+      <item itemvalue="CMake 应用程序.p03_all_primes" />
+      <item itemvalue="CMake 应用程序.p04_hanoi" />
+      <item itemvalue="CMake 应用程序.p05_maze" />
+      <item itemvalue="CMake 应用程序.p06_push_boxes" />
+      <item itemvalue="CMake 应用程序.p07_linked_list" />
+      <item itemvalue="CMake 应用程序.p08_warehouse" />
+      <item itemvalue="CMake 应用程序.p09_safe_array_cpp" />
+      <item itemvalue="CMake 应用程序.p10_zoo_cpp" />
+    </list>
+  </component>
+  <component name="SelectedDebugProfileService"><![CDATA[{
+  "profileIdByStamp": [
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake 应用程序.p10_zoo_cpp",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "35134827-4715-415f-9400-2c1c84e66fa4"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake 应用程序.p03_all_primes",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "35134827-4715-415f-9400-2c1c84e66fa4"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake 应用程序.p07_linked_list",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "35134827-4715-415f-9400-2c1c84e66fa4"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake 应用程序.p02_is_prime",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "35134827-4715-415f-9400-2c1c84e66fa4"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake 应用程序.p05_maze",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "35134827-4715-415f-9400-2c1c84e66fa4"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake 应用程序.p08_warehouse",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "35134827-4715-415f-9400-2c1c84e66fa4"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake 应用程序.p01_running_letter",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "35134827-4715-415f-9400-2c1c84e66fa4"
+    }
+  ],
+  "modificationCount": 29
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="41ca2f2f-578a-42b3-9f76-f63ad6744b95" name="更改" comment="" />
+      <created>1790080634869</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790080634869</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+    <isAutomaticBootstrapAfterUpdate value="false" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="提交" />
+    <MESSAGE value="K" />
+    <MESSAGE value="XIUGAI" />
+    <MESSAGE value="feat：完成主体代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat：完成主体代码" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
