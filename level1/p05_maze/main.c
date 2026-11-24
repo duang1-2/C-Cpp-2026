@@ -1,134 +1,78 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <conio.h>
 #include <windows.h>
 
-#define WIDTH  21
-#define HEIGHT 15
 
-#define WALL    '#'
-#define PLAYER  '@'
-#define EXIT    'E'
-#define PATH    ' '
-
-
-int maze[HEIGHT][WIDTH] = {
-    {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-    {1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1},
-    {1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1},
-    {1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1},
-    {1,0,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1},
-    {1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1},
-    {1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1},
-    {1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1},
-    {1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,0,1},
-    {1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1},
-    {1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1},
-    {1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1},
-    {1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1},
-    {1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1},
-    {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
+char maze[10][10] = {
+    {'#','#','#','#','#','#','#','#','#','#'},
+    {'#',' ',' ',' ','#',' ',' ',' ',' ','#'},
+    {'#',' ','#',' ','#',' ','#','#',' ','#'},
+    {'#',' ','#',' ',' ',' ',' ','#',' ','#'},
+    {'#',' ','#','#','#','#',' ','#',' ','#'},
+    {'#',' ',' ',' ',' ','#',' ',' ',' ','#'},
+    {'#','#','#','#',' ','#','#','#',' ','#'},
+    {'#',' ',' ',' ',' ',' ',' ',' ',' ','#'},
+    {'#',' ','#','#','#','#','#','#','E','#'},
+    {'#','#','#','#','#','#','#','#','#','#'},
 };
 
-int playerX = 1;
-int playerY = 1;
-int exitX   = 19;
-int exitY   = 13;
+int player_x = 1;
+int player_y = 1;
 
 
-void hideCursor() {
-    CONSOLE_CURSOR_INFO cursorInfo;
-    GetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursorInfo);
-    cursorInfo.bVisible = FALSE;
-    SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursorInfo);
+void clear() {
+    system("cls");
 }
 
 
-void gotoxy(int x, int y) {
-    COORD coord;
-    coord.X = x;
-    coord.Y = y;
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-}
-
-void drawMaze() {
-    gotoxy(0, 0);
-    for (int i = 0; i < HEIGHT; i++) {
-        for (int j = 0; j < WIDTH; j++) {
-            if (i == playerY && j == playerX)
-                printf("%c", PLAYER);
-            else if (i == exitY && j == exitX)
-                printf("%c", EXIT);
-            else if (maze[i][j] == 1)
-                printf("%c", WALL);
-            else
-                printf("%c", PATH);
+void print_maze() {
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            if (i == player_x && j == player_y) {
+                printf("@");
+            } else {
+                printf("%c", maze[i][j]);
+            }
         }
         printf("\n");
     }
-    printf("\n使用方向键移动，按 Q 退出\n");
+    printf("操作：↑ ↓ ← → 方向键移动 | 到达E出口获胜！\n");
 }
 
 
-int movePlayer(int dx, int dy) {
-    int nx = playerX + dx;
-    int ny = playerY + dy;
+void move(int dx, int dy) {
+    int nx = player_x + dx;
+    int ny = player_y + dy;
 
-
-    if (nx < 0 || nx >= WIDTH || ny < 0 || ny >= HEIGHT)
-        return 0;
-
-
-    if (maze[ny][nx] == 1)
-        return 0;
-
-    playerX = nx;
-    playerY = ny;
-    return 1;
-
-K
-
-int isWin() {
-    return (playerX == exitX && playerY == exitY);
+    if (maze[nx][ny] != '#') {
+        player_x = nx;
+        player_y = ny;
+    }
 }
 
 int main() {
+    int ch;
+    while (1) {
+        clear();
+        print_maze();
 
-    SetConsoleOutputCP(65001);
+        if (maze[player_x][player_y] == 'E') {
+            printf("🎉 恭喜！你赢得游戏！\n");
+            break;
+        }
 
-    hideCursor();
-    drawMaze();
+        ch = _getch();
 
-    int running = 1;
-    while (running) {
-        if (_kbhit()) {
-            int key = _getch();
-
-
-            if (key == 0 || key == 224) {
-                int arrow = _getch();
-                switch (arrow) {
-                    case 72: movePlayer( 0, -1); break;
-                    case 80: movePlayer( 0,  1); break; 
-                    case 75: movePlayer(-1,  0); break;
-                    case 77: movePlayer( 1,  0); break;
-                }
-                drawMaze();
-
-                if (isWin()) {
-                    gotoxy(0, HEIGHT + 2);
-                    printf("\n🎉 恭喜你，你赢得了游戏！🎉\n");
-                    running = 0;
-                }
-            }
-
-            else if (key == 'q' || key == 'Q') {
-                running = 0;
+        if (ch == 0xE0) {
+            ch = _getch();
+            switch (ch) {
+                case 72: move(-1, 0); break; // ↑
+                case 80: move(1, 0); break;  // ↓
+                case 75: move(0, -1); break; // ←
+                case 77: move(0, 1); break;  // →
             }
         }
     }
-
-    printf("\n游戏结束，按任意键退出...\n");
     _getch();
     return 0;
 }
